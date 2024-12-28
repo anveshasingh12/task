@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Surat Crystals</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            padding: 1.5rem 3rem;
+            color: #fff;
+        }
+
+        header .navbar-brand {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        header .nav-link {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        header .nav-link:hover {
+            color: #ffdd57;
+        }
+
+        .carousel-item {
+            height: 90vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 2rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .carousel-caption h2 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .carousel-caption p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .carousel-caption button {
+            background: #ffdd57;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            padding: 0.8rem 1.5rem;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .carousel-caption button:hover {
+            background: #e6c557;
+        }
+
+        .features {
+            padding: 4rem 2rem;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            color: #6a11cb;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .card-title {
+            font-weight: 600;
+            color: #2575fc;
+        }
+
+        .cta {
+            background: linear-gradient(90deg, #2575fc, #6a11cb);
+            color: #fff;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta button {
+            background: #ffdd57;
+            color: #333;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .cta button:hover {
+            background: #e6c557;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+           
+            <a class="navbar-brand" href="#">
+                
+                <img src="http://www.suratcrystals.com/cdn/shop/files/S_2_6602f468-480c-40e8-afb1-e28d15012024.png?v=1696588457" 
+                     alt="Surat Crystals Logo" 
+                     class="d-inline-block align-middle logo">
+            </a>
+            
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="#wishlist" title="Wishlist" class="nav-link">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cart" title="Add to Cart" class="nav-link">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#account" title="My Account" class="nav-link">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+                
+                
+                <form class="d-flex ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search products" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    
+    <style>
+        
+        .navbar .nav-link i {
+            color: white; 
+        }
+
+        .navbar .nav-link:hover i {
+            color: #f0a500; 
+        }
+
+        
+        .navbar .d-flex input {
+            width: 200px; 
+            border-radius: 20px;
+        }
+
+        .navbar .btn-outline-light {
+            border-radius: 20px; 
+        }
+
+        
+        .navbar-brand img.logo {
+            height: 60px;
+            width: auto;
+            margin-right: 15px; 
+        }
+
+        
+        .navbar .nav-link i:hover {
+            color: #f0a500; 
+        }
+
+       
+        .navbar-dark {
+            background-color: #343a40; 
+        }
+    </style>
+</body>
+
+
+
+
+
+
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('https://th.bing.com/th/id/R.f4ed07f5ed25b90efd7a17fad55fd168?rik=Gebdokl0Wupdcw&riu=http%3a%2f%2fmedia.beliefnet.com%2f%7e%2fmedia%2fphotos%2fholistic-living%2fgalleries%2f7-crystals-you-need-to-bring-love-into-your-love-life%2fcrystals_intro.jpg&ehk=j1hKlc%2f4WCXk7gogmceB7%2fj0035bb6x6jRoUMF2F%2fN0%3d&risl=&pid=ImgRaw&r=0');">
+                <div class="carousel-caption">
+                    <h2>Discover Crystal Elegance</h2>
+                    <p>Experience timeless beauty with Surat Crystals.</p>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://i.etsystatic.com/25665643/r/il/37479e/3108237182/il_1588xN.3108237182_ql6b.jpg');">
+                <div class="carousel-caption">
+                    <h2>Variety of Bracelets</h2>
+                    <p>Discover our exclusive bracelet collection featuring vibrant styles and designs.</p>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <section class="features" id="products">
+        <h2>Our Features</h2>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/05/3c/c6/053cc6b746b31cb0380a2fcc35c74d68.jpg" 
+                             alt="Premium Quality" 
+                             style="width: 100%; height: auto;" 
+                             class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Premium Quality</h5>
+                            <p class="card-text">Crafted with utmost precision and care.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://i0.wp.com/magzhouse.com/wp-content/uploads/2019/08/Beautiful-Glass-Crystal-Ideas-For-Lovely-Home-Decor-18.jpg?fit=1024%2C1024&ssl=1" 
+                             class="card-img-top" 
+                             alt="Unique Designs">
+                        <div class="card-body">
+                            <h5 class="card-title">Unique Designs</h5>
+                            <p class="card-text">Exclusive collection of exquisite crystal designs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.TsTydjZ22tmDo3VIpeC6_AHaHa?rs=1&pid=ImgDetMain" 
+                             alt="Custom Creations" 
+                             style="width: 100%; height: auto;" 
+                             class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Creations</h5>
+                            <p class="card-text">Personalized designs to suit your unique style and needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://ethikainc.com/cdn/shop/articles/Sustainability_and_AI_Shaping_a_Greener_Lifestyle_for_the_Future.png?v=1689624985" 
+                             class="card-img-top" 
+                             alt="Sustainability">
+                        <div class="card-body">
+                            <h5 class="card-title">Sustainability</h5>
+                            <p class="card-text">Eco-friendly practices in every step of our process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Shop by Category Section -->
+<div class="shop-by-category mt-5">
+    <h2>Shop by Category</h2>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Men Category -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://cdn.shopify.com/s/files/1/0012/7339/7332/files/58_40930caf-5ba5-40c9-b625-d63bb7c1226c_1024x1024.png?v=1643818481" 
+                         class="card-img-top uniform-image" 
+                         alt="Men's Collection">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">For Men</h5>
+                        <p class="card-text">Discover exclusive designs crafted for men.</p>
+                        <a href="#men" class="btn btn-primary">Shop Men</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Women Category -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://i.pinimg.com/originals/18/0c/3e/180c3ee10fb10afff46de795da005072.jpg" 
+                         class="card-img-top uniform-image" 
+                         alt="Women's Collection">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">For Women</h5>
+                        <p class="card-text">Elegant and unique pieces perfect for women.</p>
+                        <a href="#women" class="btn btn-primary">Shop Women</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kids Category -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://nailsknotsandnotions.com/wp-content/uploads/2023/02/boymakingcrystalbracelet.jpg" 
+                         class="card-img-top uniform-image" 
+                         alt="Kids' Collection">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">For Kids</h5>
+                        <p class="card-text">Playful and colorful designs loved by kids.</p>
+                        <a href="#kids" class="btn btn-primary">Shop Kids</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Custom CSS -->
+<style>
+    .uniform-image {
+        width: 100%; /* Ensure the image fills the card width */
+        height: 300px; /* Set a consistent height */
+        object-fit: cover; /* Crop images to fit without distortion */
+    }
+</style>
+
+
+<!-- Added spacing below Shop by Category section -->
+<div class="mb-5"></div>
+
+<section class="cta">
+    <h2>Transform Your Space with Crystals</h2>
+    <p>Contact us for personalized designs and bulk orders.</p>
+    <button>Get in Touch</button>
+</section>
+
+<!-- Custom CSS -->
+<style>
+    .cta h2 {
+        color: black; /* Set the text color to black */
+    }
+</style>
+
+
+<footer>
+    <p>&copy; 2024 Surat Crystals. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Thank you for your interest! This feature will be implemented soon.');
+        });
+    });
+</script>
+<script>
+    const searchForm = document.querySelector('form[role="search"]');
+    searchForm.addEventListener('submit', (e) => {
+        const searchInput = searchForm.querySelector('input[type="search"]');
+        if (searchInput.value.trim() === '') {
+            e.preventDefault();
+            alert('Please enter a search term.');
+        }
+    });
+</script>
+<script>
+    document.querySelectorAll('a[title="Wishlist"], a[title="Add to Cart"]').forEach(icon => {
+        icon.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert(`${icon.title} feature coming soon!`);
+        });
+    });
+</script>
+<script>
+    document.querySelectorAll('a.nav-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+<script>
+    document.querySelector('.cta button').addEventListener('click', () => {
+        const contactSection = document.querySelector('#contact');
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+
+</body>
+
+</html>
